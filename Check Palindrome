@@ -1,0 +1,11 @@
+user_input = input("Enter a word : ")
+
+# 2. Clean the input (remove spaces, punctuation, and make it lowercase)
+cleaned_input = "".join(user_input)
+
+# 3. Check if the cleaned text reads the same backward
+if cleaned_input == cleaned_input[::-1]:
+    print(f"'{user_input}' is a palindrome!")
+else:
+    print(f"'{user_input}' is NOT a palindrome.")
+    
